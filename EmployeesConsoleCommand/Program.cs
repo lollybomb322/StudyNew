@@ -47,7 +47,7 @@ namespace EmployeesConsoleCommand
             #endregion 
 
             IServiceCollection builderService = new ServiceCollection();
-            builderService.AddSingleton<IDataController, SQLiteController>();
+            builderService.AddSingleton<IDataController, DapperPostgresController>();
             IServiceProvider serviceProvider = builderService.BuildServiceProvider();
 
             

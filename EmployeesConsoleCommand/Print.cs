@@ -42,6 +42,7 @@ namespace EmployeesConsoleCommand
                 }
                 ski = Console.ReadKey(true);
             }
+            Console.CursorVisible = false;
             if (ski.Key == ConsoleKey.Enter)
             {
                 Console.WriteLine();
